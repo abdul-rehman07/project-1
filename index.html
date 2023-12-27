@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/abs-1850926_640.jpg');
+        background-size: 1500px 1500px;
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        display: inline-block;
+
+        top: 20px;
+        left: 40px;
+        position: absolute;
+        /* width: 13%; */
+    }
+
+    .left img {
+        width: 100px;
+        margin: -32px 33px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 28px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 42%;
+        margin: 25px auto;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 3px;
+        top: 37px;
+        display: inline-block;
+
+    }
+
+    .btn {
+        font-family: 'Oswald', sans-serif;
+        background-color: black;
+        color: white;
+        margin: 2px 9px;
+        padding: 4px 14px;
+        border-radius: 10px;
+        border: 2px solid gray;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .btn:hover {
+        background-color: rgb(48, 46, 46);
+    }
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 30px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .container {
+        margin: 90px auto;
+        padding: 61px 172px;
+        width: 33%;
+        border: 2px solid white;
+        border-radius: 28px;
+
+    }
+
+    .form-action input {
+        background: white;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 7px auto;
+        border-radius: 20px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+
+    .cont {
+        /* border: 2px solid purple; */
+        display: inline-block;
+        width: 30%;
+        margin: 19px;
+        overflow: hidden;
+    }
+    .cont h2:hover{
+        color: red;
+        box-shadow: rgb(94, 94, 216);
+    }
+    .cont img:hover{
+        box-shadow: 10px 10px 5px 12px lightblue;
+    }
+    .cont p{
+        border: 2px solid gray ;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/IMG-20230927-WA0035.png" alt="">
+            <div>
+                Fitness GYM
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Contact us </button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE GYM</h1>
+        <form action="noaction.php">
+            <div class="form-action">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-action">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-action">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-action">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="box">
+        <div class="cont">
+            <img src="img/abs-1850926_640.jpg" alt="">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit reprehenderit dignissimos sit commodi
+                enim quia, totam sed incidunt id, quo facere, iste ex provident esse non quod distinctio officia
+                facilis!</p>
+        </div>
+        <div class="cont">
+            <img src="img/abs-1850926_640.jpg" alt="">
+            <h2>Details</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit reprehenderit dignissimos sit commodi
+                enim quia, totam sed incidunt id, quo facere, iste ex provident esse non quod distinctio officia
+                facilis!</p>
+        </div>
+        <div class="cont">
+            <img src="img/abs-1850926_640.jpg" alt="">
+            <h2>Functions</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit reprehenderit dignissimos sit commodi
+                enim quia, totam sed incidunt id, quo facere, iste ex provident esse non quod distinctio officia
+                facilis!</p>
+        </div>
+    </div>
+</body>
+
+</html>
